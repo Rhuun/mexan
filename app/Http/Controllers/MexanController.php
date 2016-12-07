@@ -38,9 +38,23 @@ class MexanController extends Controller
               $newAdditionalAttribut->value = $item->value;
               $newAdditionalAttribut->save();
             }
-
           }
         }
       }
+    }
+
+    public function index(){
+      $articles = Article::all();
+      $arrData = [];
+      foreach($articles as $article){
+        $additionalAttributes = Additional_attribut::where('article_id', '=', $article->id)->get();
+        $arrAdditionalAttributes = [];
+        foreach($additionalAttributes as $item){
+          $arrAdditionalAttributes[] = ['attribute_code' => $item->attribute_code, 'value' => $item->value];
+        }
+
+        $arrData[] = ['name' => $article->name, 'price' => $article ->price, 'arrAdditionalAttributes' => $arrAdditionalAttributes];
+      }
+      return view('/Mexan/index', ['arrData' => $arrData]);
     }
 }
