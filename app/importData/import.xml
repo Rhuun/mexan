@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+    <article>
+        <id>105289</id>
+        <created_at>02/01/2016 18:00:00</created_at>
+        <categories><![CDATA[Shop/Gewürze,Shop]]></categories>
+        <name><![CDATA[Curry Dose]]></name>
+        <price>19.50</price>
+        <additional_attributes>
+            <additional_attribute>
+                <attribute_code>bestseller</attribute_code>
+                <value>0</value>
+            </additional_attribute>
+            <additional_attribute>
+                <attribute_code>vegan</attribute_code>
+                <value>1</value>
+            </additional_attribute>
+            <additional_attribute>
+                <attribute_code>lactose_free</attribute_code>
+                <value>0</value>
+            </additional_attribute>
+        </additional_attributes>    
+    </article>
+    <article>
+        <id>19973</id>
+        <created_at>02/01/2016 18:00:00</created_at>
+        <categories><![CDATA[Shop/Bouillon]]></categories>
+        <name><![CDATA[Gemüse-Bouillon 50g]]></name>
+        <price>10.0</price>
+    </article>
+</articles>
